@@ -570,11 +570,11 @@ p {
 	font-size:12px;
     
     background: whitesmoke url('images/fundocontato.jpg') repeat-x;
-	-webkit-animation: 15s linear 0s normal none infinite animate;
-	-moz-animation: 25s linear 0s normal none infinite animate;
-	-ms-animation: 25s linear 0s normal none infinite animate;
-	-o-animation: 25s linear 0s normal none infinite animate;
-	animation: 25s linear 0s normal none infinite animate;
+	-webkit-animation: 60s linear 0s normal none infinite animate;
+	-moz-animation: 60s linear 0s normal none infinite animate;
+	-ms-animation: 60s linear 0s normal none infinite animate;
+	-o-animation: 60s linear 0s normal none infinite animate;
+	animation: 60s linear 0s normal none infinite animate;
 
  
     
