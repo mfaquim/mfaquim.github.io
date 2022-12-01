@@ -73,6 +73,10 @@ p {
     background-color: rgb(248, 94, 77);
 
 }
+
+#about > div > div.col-right > a:hover{
+    color:whitesmoke;
+}
 .brand h1{
     font-size: 3rem;
     text-transform: uppercase;
@@ -871,4 +875,10 @@ p {
     }
 }
 /* End Media Query for Desktop */
+
+@media screen and (max-width: 768px) {
+    #footer > div > h2, #footer > div > div.brand > h1{
+    padding-left: 1.3rem;
+}
+}
 
