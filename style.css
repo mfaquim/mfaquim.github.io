@@ -305,7 +305,9 @@ p {
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
+
 }
+
 #services .service-top{
     max-width: 500px;
     margin: 0 auto;
@@ -382,6 +384,7 @@ p {
     text-align: left;
     font-size: 1.4rem;
     line-height: 1.9rem;
+    
 }
 
 #services > div > div.service-top > p {
@@ -396,6 +399,7 @@ p {
     color: rgb(248, 94, 77);
     font-weight: 500;
 }
+
 
 .inactive {
     display: none;
@@ -628,6 +632,7 @@ p {
     box-shadow: 0px 0px 18px 0 #0000002c;
     transition: .3s ease box-shadow;
     background-color: white;
+    text-align: center;
 }
 #contact .contact-item:hover{
     box-shadow: 5px 5px 5px 5px rgb(248, 94, 77);
@@ -641,11 +646,13 @@ p {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 5px;
+
 }
 #contact .contact-info h2{
     font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 500;
+
 }
 
 #contact .contact-item h1{
@@ -839,7 +846,7 @@ p {
     #contact .contact-item .contact-info{
         width: 100%;
         text-align: left;
-        padding-left: 20px;
+        
     }
     /* End Contact */
 
