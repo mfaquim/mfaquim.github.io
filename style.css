@@ -601,6 +601,7 @@ background-color: white; }
 #about .col-right p {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 #about .col-right .cta {
