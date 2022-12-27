@@ -514,6 +514,7 @@ background-color: white; }
     margin: 20px auto;
     overflow: hidden;
     border-radius: 3em;
+    
 }
 
 #projects .project-info {
@@ -558,7 +559,8 @@ background-color: white; }
     background-position: center;
     object-fit: fill;
     width: 100%;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
+    box-shadow: 0px 10px 10px rgb(248, 94, 77);
 
 }
 
@@ -985,6 +987,7 @@ background-color: white; }
     padding-left: 40px;
     padding-right: 40px;
     box-shadow: -2px 15px 20px #3f4a57;
+    border: 2px solid rgb(248, 94, 77);
     line-height: 2em;
     transition: .4s ease-in-out;
     border-radius: 3em;
@@ -1000,6 +1003,7 @@ background-color: white; }
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 1.3em;
+    border: 2px solid rgb(248, 94, 77);
     box-shadow: -2px 15px 20px #3f4a57;
     line-height: 2em;
     transition: .4s ease-in-out;
