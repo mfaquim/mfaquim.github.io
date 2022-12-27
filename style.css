@@ -551,6 +551,8 @@ background-color: white; }
     position: relative;
     background-position: center;
     object-fit: fill;
+    width: 100%;
+    margin-bottom: 1em;
 
 }
 
