@@ -10,9 +10,20 @@ document.addEventListener("scroll", () => {
   }
 });
 
-const hamburguer = document.querySelector(
-  ".header .nav-bar .nav-list .hamburguer"
-);
+document.addEventListener("scroll", () => {
+
+  let heroSet = "<span>M</span>arco <span>A</span>ntonio <span>F</span>aquim</h1>";
+  let heroHtml = "<span>M</span>faquim";
+  let scroll_position = window.scrollY;
+  if (scroll_position > 195) {
+    document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = heroHtml;
+  } else {
+    document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = heroSet;
+  }
+});
+
+
+const hamburguer = document.querySelector(".header .nav-bar .nav-list .hamburguer");
 const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
 const menu_item = document.querySelectorAll(
   ".header .nav-bar .nav-list ul li a"
