@@ -69,7 +69,7 @@ p {
     margin-top: 30px;
     transition: .4s ease-in-out;
     transition-property: background-color, color;
-    box-shadow: 0px 20px 20px #3f4a57;
+    box-shadow: 0px 20px 20px #414c59;
     border-radius: 1.3em;
 
 }
@@ -485,7 +485,7 @@ background-color: white; }
 
 #projects .projects {
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -500,8 +500,8 @@ background-color: white; }
     justify-content: center;
     flex-direction: column;
     border-radius: 20px;
-    box-shadow: -10px -10px 100px rgb(248, 94, 77), 10px 10px 10px rgb(248, 94, 77);
     border-radius: 20px;
+    background-size: contain;
 }
 
 #projects .project-item {
@@ -514,6 +514,8 @@ background-color: white; }
     margin: 20px auto;
     overflow: hidden;
     border-radius: 3em;
+    box-shadow: -2px  10px 100px 20px black;
+    background-color: #b1cff5;
     
 }
 
@@ -559,8 +561,14 @@ background-color: white; }
     background-position: center;
     object-fit: fill;
     width: 100%;
-    margin-bottom: 1em;
-    box-shadow: 0px 10px 10px rgb(248, 94, 77);
+    margin-bottom: .2em;
+    box-shadow: 0px -5px 0px #f85e4d, 0px 5px 0px #f85e4d;
+
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: contain
 
 }
 
@@ -576,10 +584,11 @@ background-color: white; }
 
 #projects .project-img img {
     transition: 0.3s ease transform;
+    transform: scale(1.1);
 }
 
 #projects .project-item:hover .project-img img {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 
