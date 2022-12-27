@@ -50,7 +50,7 @@ img {
 
 p {
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300;
@@ -545,7 +545,6 @@ background-color: white; }
 
 #projects .project-img {
     flex-basis: 50%;
-    height: 300px;
     overflow: hidden;
     position: relative;
     background-position: center;
@@ -593,13 +592,14 @@ background-color: white; }
 }
 
 #about .col-right h2 {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     font-weight: 500;
     letter-spacing: .2rem;
     margin-bottom: 10px;
 }
 
 #about .col-right p {
+    font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
@@ -847,27 +847,7 @@ background-color: white; }
     /* End of Service Section */
 
     /* Project */
-    #projects .project-item{
-        flex-direction: row;
-    }
-    #projects .project-item:nth-child(even){
-        flex-direction: row-reverse;
-    }
-    #projects .project-item{
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        border-radius: 0;
-        object-fit: scale-down;
-    }
-    #projects .all-projects .project-info{
-        height: 100%;  
-    } 
-    #projects .all-projects .project-img{
-        height: 100%;
-        object-fit: fill;
 
-    } 
     /* End of Project */
 
     /* About */
