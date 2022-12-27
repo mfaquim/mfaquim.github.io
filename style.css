@@ -76,11 +76,11 @@ p {
 
 .cta:hover {
     color: rgb(248, 94, 77);
-    background-color: #67778e;
+    background-color: #404b58;
 }
 
 #about > div > div.col-right > a:hover{
-    color:#67778e;
+    color:#404b58;
 }
 .brand h1{
     font-size: 3rem;
@@ -1000,7 +1000,7 @@ background-color: white; }
     margin-right: 2.2em;
 }
 #header > div > div > div.nav-list > nav:hover {
-    background-color: #67778e;
+    background-color: #404b58;
     transition: .4s ease-in-out;
 }
 
@@ -1015,6 +1015,6 @@ background-color: white; }
 }
 
 #header > div > div > div.brand > a > h1:hover {
-    background-color: #3f4a57;
+    background-color: #404b58;
     transition: .4s ease-in-out;
 }
