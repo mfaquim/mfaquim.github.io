@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&family=Nova+Round&family=Purple+Purse&display=swap');
+
 
 * {
     padding: 0;
@@ -8,12 +9,12 @@
 
 html {
     font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Purple Purse', cursive;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
-
     text-decoration: none;
 
 }
@@ -26,6 +27,7 @@ a {
     letter-spacing: .2rem;
     text-align: center;
     padding: 20px;
+    
 }
 
 .section-title span {
@@ -43,6 +45,7 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    max-width: 100%;
 }
 
 p {
@@ -57,34 +60,55 @@ p {
 .cta {
     display: inline-block;
     padding: 10px 30px;
-    color: white;
+    color: whitesmoke;
     background-color: transparent;
     border: 2px solid rgb(248, 94, 77);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 30px;
-    transition: .3s ease;
+    transition: .4s ease-in-out;
     transition-property: background-color, color;
+    box-shadow: 0px 20px 20px #3f4a57;
+    border-radius: 1.3em;
+
 }
 
 .cta:hover {
-    color: white;
-    background-color: rgb(248, 94, 77);
-
+    color: rgb(248, 94, 77);
+    background-color: #67778e;
 }
 
 #about > div > div.col-right > a:hover{
-    color:whitesmoke;
+    color:#67778e;
 }
 .brand h1{
     font-size: 3rem;
     text-transform: uppercase;
-    color: white;
+    color: whitesmoke;
 }
 .brand h1 span{
     color: rgb(248, 94, 77);
 }
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }  
 
 /* Header */
 #header{
@@ -94,11 +118,44 @@ p {
     top: 0;
     width: 100vw;
     height: auto;
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation-delay: 2s;
 }
+
+#hero .cta {
+	-webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation-delay: 3.5s;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
 #header .header{
     min-height: 8vh;
-    background-color: rgba(31,30,30,0.24);
+    background-color: transparent;
     transition: .3s ease background-color;
+    border-bottom-left-radius: 8em;  
+    border-bottom-right-radius: 20em;
+    
+
 }
 #header .nav-bar{
     display: flex;
@@ -106,13 +163,12 @@ p {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    max-width: 1300px;
-    padding:0 10px;
+    padding:10px 10px;
+    
 }
 #header .nav-list ul{
     list-style: none;
     position: absolute;
-    background: rgba(31,30,30);
     width: 100vh;
     height: 100vh;
     left: 100%;
@@ -124,17 +180,24 @@ p {
     z-index: 1;
     overflow-x: hidden;
     transition: .5s ease left;
+
+    border-radius: 1.3em;
+    margin-right: 1.3em;
+    
 }
 #header .nav-list ul.active{
     left: 0%;
     max-width: 100vw;
+    transition: .5s ease;
+    border-radius: 1.3em;
+
 }
 #header .nav-list ul a{
     font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: .2rem;
     text-decoration:none;
-    color: white;
+    color: whitesmoke;
     text-transform: uppercase;
     padding: 20px;
     display: block;
@@ -163,7 +226,7 @@ p {
     height: 60px;
     width: 60px;
     display: inline-block;
-    border: 3px solid white;
+    border: 3px solid whitesmoke;
     border-radius: 50%;
     position: relative;
     display: flex;
@@ -180,14 +243,14 @@ p {
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border: 3px solid white;
-    animation: hamburguer_pulse 1s ease infinite;
+    border: 3px solid whitesmoke;
+    animation: hamburguer_pulse .8s ease infinite;
 }
 #header .hamburguer .bar{
      height: 2px;
      width: 30px;
      position: relative;
-     background-color: white;
+     background-color: whitesmoke;
      z-index: -1;
 }
 #header .hamburguer .bar::after,
@@ -197,7 +260,7 @@ p {
     height: 100%;
     width: 100%;
     left: 0;
-    background-color: white;
+    background-color: whitesmoke;
     transition: .3s ease;
     transition-property: top, bottom;
 }
@@ -222,6 +285,7 @@ p {
     background-position: top center;
     position: relative;
     z-index: 1;
+    opacity: 1;
     background-attachment: fixed;
     background-repeat: no-repeat;
     object-fit: scale-down;
@@ -232,7 +296,6 @@ p {
     margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
-
 }
 
 #hero::after {
@@ -243,8 +306,8 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: .2;
+    background-color: #3f4a57;
+    opacity: .4;
     z-index: -1;
 }
 
@@ -254,8 +317,8 @@ p {
     font-size: 4rem;
     position: relative;
     color: transparent;
-    animation: text_reveal .5s ease forwards;
-    animation-delay: 1s;
+    animation: text_reveal 1s ease forwards;
+    animation-delay: 1.5s;
 }
 
 #hero h1:nth-child(1) {
@@ -298,6 +361,8 @@ p {
 /* End Hero Section */
 
 /* Services Scetion */
+#services {
+background-color: white; }
 
 #services .services {
     flex-direction: column;
@@ -305,7 +370,7 @@ p {
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
-
+    
 }
 
 #services .service-top{
@@ -414,6 +479,10 @@ p {
 
 
 /* Projcets Section */
+#projects {
+    background-color: whitesmoke;
+}
+
 #projects .projects {
     flex-direction: column;
     max-width: 1200px;
@@ -447,7 +516,7 @@ p {
 }
 
 #projects .project-info {
-    color: white;
+    color: whitesmoke;
     padding: 30px;
     flex-basis: 50%;
     height: 100%;
@@ -471,7 +540,7 @@ p {
 }
 
 #projects .project-info p {
-    color: white;
+    color: whitesmoke;
 }
 
 #projects .project-img {
@@ -537,8 +606,8 @@ p {
 #about .col-right .cta {
     color: rgb(248, 94, 77);
     margin-bottom: 30px;
-    padding: 10px 20px;
-    font-size: 2rem;
+    padding: 20px 60px;
+    font-size: 2.5rem;
 }
 
 #about .col-left .about-img {
@@ -549,7 +618,7 @@ p {
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid white;
+    border: 10px solid whitesmoke;
 }
 
 #about .col-left .about-img::after {
@@ -566,6 +635,7 @@ p {
 /* End of About Section */
 
 /* Contact Section */
+
 #contact .contact {
     flex-direction: column;
     margin: 0 auto;
@@ -632,7 +702,7 @@ p {
     align-items: center;
     box-shadow: 0px 0px 18px 0 #0000002c;
     transition: .3s ease box-shadow;
-    background-color: white;
+    background-color: whitesmoke;
     text-align: center;
 }
 #contact .contact-item:hover{
@@ -680,7 +750,7 @@ p {
     padding-bottom: 10px;
 }
 #footer h2{
-    color: white;
+    color: whitesmoke;
     font-weight: 500;
     font-size: 1.8rem;
     letter-spacing: .3rem;
@@ -704,7 +774,7 @@ p {
     filter: grayscale(0);
 }
 #footer p{
-    color: white;
+    color: whitesmoke;
     font-size: 1.3rem;
 }
 
@@ -738,7 +808,7 @@ p {
 
 @keyframes text_reveal {
     100% {
-        color: white;
+        color: whitesmoke;
 
     }
 }
@@ -912,5 +982,39 @@ p {
     #projects > div > div.all-projects {
         padding: 25px 0;
     }
+    #header > div > div > div.nav-list > nav > ul {
+        overflow-x: hidden;
+        background-color: #3f4a57;
+        border-radius: 1.3em;
+    }
 }
 
+#header > div > div > div.nav-list > nav {
+    margin-left: .4em;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: -2px 15px 20px #3f4a57;
+    line-height: 2em;
+    transition: .4s ease-in-out;
+    border-radius: 3em;
+    margin-right: 2.2em;
+}
+#header > div > div > div.nav-list > nav:hover {
+    background-color: #67778e;
+    transition: .4s ease-in-out;
+}
+
+#header > div > div > div.brand > a > h1{
+    margin-left: .4em;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 1.3em;
+    box-shadow: -2px 15px 20px #3f4a57;
+    line-height: 2em;
+    transition: .4s ease-in-out;
+}
+
+#header > div > div > div.brand > a > h1:hover {
+    background-color: #3f4a57;
+    transition: .4s ease-in-out;
+}
