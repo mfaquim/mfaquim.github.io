@@ -9,7 +9,7 @@ document.addEventListener("scroll", () => {
   } else {
     header.style.backgroundColor = "transparent";
     header.style.boxShadow =  "none";
-    document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = "<span>M</span>faquim";
+    document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = "<span>MFA</span>quim";
   }
 });
 
