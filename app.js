@@ -4,21 +4,12 @@ document.addEventListener("scroll", () => {
     header.style.backgroundColor = "#3f4a57";
     header.style.boxShadow =  "-1px 15px 10px #3f4a57";
     header.style.transition = ".3s ease";
+    let heroSet = "<span>M</span>arco <span>A</span>ntonio <span>F</span>aquim";
+    document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = heroSet;
   } else {
     header.style.backgroundColor = "transparent";
     header.style.boxShadow =  "none";
-  }
-});
-
-document.addEventListener("scroll", () => {
-
-  let heroSet = "<span>M</span>arco <span>A</span>ntonio <span>F</span>aquim</h1>";
-  let heroHtml = "<span>M</span>faquim";
-  let scroll_position = window.scrollY;
-  if (scroll_position > 195) {
-    document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = heroHtml;
-  } else {
-    document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = heroSet;
+    document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = "<span>M</span>faquim";
   }
 });
 
