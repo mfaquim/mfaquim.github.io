@@ -19,6 +19,7 @@ a {
 
 }
 .section-title {
+    z-index: 10;
     font-size: 5rem;
     font-weight: 300;
     color: black;
@@ -422,7 +423,7 @@ background-color: white; }
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-color: ease-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: .8;
     z-index: -1;
 }
@@ -524,7 +525,7 @@ background-color: white; }
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: ease(60deg, #29323c 0%, #3f4a57 100%);
     margin-bottom: .5em;
     border-bottom-left-radius: 1.3em;
     border-bottom-right-radius: 1.3em;
@@ -655,6 +656,7 @@ background-color: white; }
 
 /* Contact Section */
 
+
 #contact .contact {
     flex-direction: column;
     margin: 0 auto;
@@ -668,11 +670,11 @@ background-color: white; }
 	font-size:12px;
     
     background: whitesmoke url('images/fundocontato.jpg') repeat-x;
-	-webkit-animation: 60s linear 0s normal none infinite animate;
-	-moz-animation: 60s linear 0s normal none infinite animate;
-	-ms-animation: 60s linear 0s normal none infinite animate;
-	-o-animation: 60s linear 0s normal none infinite animate;
-	animation: 60s linear 0s normal none infinite animate;
+	-webkit-animation: 60s ease 0s normal none infinite animate;
+	-moz-animation: 60s ease 0s normal none infinite animate;
+	-ms-animation: 60s ease 0s normal none infinite animate;
+	-o-animation: 60s ease 0s normal none infinite animate;
+	animation: 60s ease 0s normal none infinite animate;
 
 }
  
@@ -703,12 +705,13 @@ background-color: white; }
 }
 
 
+
 #contact > div > div > div:nth-child(1) {
     position: relative;
     bottom: 15em;
 }
 
-.social-media {
+#social-media-left {
     box-sizing: inherit;
     position: fixed;
     width: 40px;
@@ -718,12 +721,34 @@ background-color: white; }
     z-index: 10;
     
 }
-.social-media::after {
+#social-media-left::after {
     box-sizing: inherit;
     content: "";
     display: block;
     width: 2px;
     height: 90px;
+    margin: 0px auto;
+    background-color: #f85e4d;
+    margin-top: .5em;
+}
+
+#social-media-right {
+    box-sizing: inherit;
+    position: fixed;
+    width: 40px;
+    bottom: 0px;
+    right: auto;
+    left: 80px;
+    z-index: 10;
+    
+}
+
+#social-media-right::after {
+    box-sizing: inherit;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 140px;
     margin: 0px auto;
     background-color: #f85e4d;
     margin-top: .5em;
@@ -748,10 +773,9 @@ background-color: white; }
     transition: .3s ease box-shadow;
     background-color: whitesmoke;
     text-align: center;
+    box-shadow: 5px 5px 5px 5px red;
 }
-#contact .contact-item:hover{
-    box-shadow: 5px 5px 5px 5px rgb(248, 94, 77);
-}
+
 #contact .icon{
     width: 70px;
     margin: 0 auto;
@@ -785,7 +809,7 @@ background-color: white; }
 
 /* Footer */
 #footer {
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: ease-gradient(60deg, #29323c 0%, #485563 100%);
 }
 #footer .footer{
     min-height: 200px;
@@ -938,6 +962,9 @@ background-color: white; }
         width: 30%;
         margin: 0;
         flex-direction: row;
+        -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    box-shadow: -5px -5px 20px #343e48, 5px 5px 20px #3e4a58;
     }
     #contact .contact-item .icon{
         height: 100px;
@@ -948,9 +975,13 @@ background-color: white; }
     }
     #contact .contact-item .contact-info{
         width: 100%;
-        text-align: left;
-        
+        text-align: left;        
     }
+
+    .contact h1 span{
+        color: rgb(248, 94, 77);
+    }
+
     /* End Contact */
 
 }   
@@ -1044,12 +1075,3 @@ background-color: white; }
     background-color: #404b58;
     transition: .4s ease-in-out;
 }
-
-.container #snow {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: linear-gradient(red, red);
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10px red);
-  }
