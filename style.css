@@ -486,8 +486,10 @@ background-color: white; }
 #projects .projects {
     flex-direction: column;
     max-width: 1000px;
+    max-height: fit-content;
     margin: 0 auto;
     padding: 100px 0;
+
 }
 
 #projects .projects-header h1 {
@@ -523,7 +525,6 @@ background-color: white; }
 #projects .project-info {
     color: whitesmoke;
     padding: 30px;
-    flex-basis: 50%;
     height: 100%;
     width: 100%;
     display: flex;
