@@ -4,7 +4,7 @@ document.addEventListener("scroll", () => {
     header.style.backgroundColor = "#3f4a57";
     header.style.boxShadow =  "-1px 15px 10px #3f4a57";
     header.style.transition = ".3s ease";
-    let heroSet = "<span>M</span>arco Antonio <span>F</span>aquim";
+    let heroSet = "<span>M</span>arco Antonio <span>F</span>aquim™";
     document.querySelector("#header > div > div > div.brand > a > h1").innerHTML = heroSet;
   } else {
     header.style.backgroundColor = "transparent";
