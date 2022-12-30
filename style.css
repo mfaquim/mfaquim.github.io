@@ -53,11 +53,12 @@ img {
 
 p {
     color: #0f0f0f;
-    font-size: 1.8rem;
+    font-size: 1.8em;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300;
     letter-spacing: 0.05rem;
+
 }
 
 .cta {
@@ -86,7 +87,7 @@ p {
     color:#404b58;
 }
 .brand h1{
-    font-size: 3.3rem;
+    font-size: clamp(3.3rem, 3.3vw, 2rem); 
     text-transform: uppercase;
     color: whitesmoke;
 }
@@ -155,8 +156,8 @@ p {
     min-height: 8vh;
     background-color: transparent;
     transition: .3s ease background-color;
-    border-bottom-left-radius: 8em;  
-    border-bottom-right-radius: 20em;
+    border-bottom-left-radius: 6em;  
+    border-bottom-right-radius: 6em;
     
 
 }
@@ -1055,7 +1056,7 @@ background-color: white; }
     border-radius: 3em;
     margin-right: 2.2em;
 }
-#header > div > div > div.nav-list > nav:hover {
+#header > div > div > div.nav-list > nav::hover {
     background-color: #404b58;
     transition: .4s ease-in-out;
 }
