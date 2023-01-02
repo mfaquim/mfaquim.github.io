@@ -50,8 +50,13 @@ p {
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
-    padding: 20px;
-    
+    padding: 24px 24px;
+    border: 2px solid whitesmoke;
+    border-radius: 6em;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container {
     min-height: 100vh;
@@ -610,6 +615,14 @@ object-fit: scale-down;
 /* Projcets Section */
 #projects {
     background-color: whitesmoke;
+    background-image: url('/images/image-3.jpg');
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: contain;
 }
 
 #projects .projects {
@@ -798,10 +811,6 @@ object-fit: scale-down;
     justify-content: center;
     display: flex;
     object-fit: contain;
-    
-	font-family:"arial",heletica,sans-serif;
-	font-size:12px;
-    
     background: whitesmoke url('/images/hireme.svg');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -934,9 +943,10 @@ object-fit: scale-down;
 
 }
 
-#contact .contact-item h1{
-    color: black;
+#contact .section-title {
+    background: none;
 }
+
 /* End of Contact Section */
 
 /* Footer */
@@ -1078,7 +1088,6 @@ object-fit: scale-down;
     /* Contact */
     #contact .contact{
         flex-direction: column;
-        padding: 100px 0;
         align-items: center;
         justify-content: center;
         min-width: 20vh;
