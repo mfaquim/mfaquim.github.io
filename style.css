@@ -506,7 +506,7 @@ min-height: 120vh;
 
 #services .service-top p {
     font-size: 1.4rem;
-    color: #222;
+    color: black;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300px;
@@ -537,7 +537,7 @@ min-height: 120vh;
     background-image: url(./images/image2.svg);
     background-size: cover; /*  se estica para cobrir a caixa. contain reduz a imagem ao tamanho */
     margin: 10px 5%;
-    color: #222;
+    color: black;
     position: relative;
     z-index: 200;
     overflow: hidden;
@@ -570,7 +570,7 @@ min-height: 120vh;
 
 #services .service-item h2 {
     font-size: 2rem;
-    color: #222;
+    color: black;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -648,7 +648,7 @@ min-height: 120vh;
     margin-bottom: 4em;
     overflow: hidden;
     border-radius: 3em;
-    box-shadow: -2px  10px 100px 20px #222;
+    box-shadow: -2px  10px 100px 20px black;
     background-color: transparent;
     /*transition to #768ba3*/
     
