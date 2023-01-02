@@ -25,7 +25,6 @@ document.addEventListener("scroll", () => {
     prevScrollpos = currentScrollPos;
 }
 
-const hireMe = document.getElementById(contact);
 const hamburguer = document.querySelector(".header .nav-bar .nav-list .hamburguer");
 const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
 const menu_item = document.querySelectorAll(
