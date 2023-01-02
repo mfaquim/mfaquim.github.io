@@ -1151,7 +1151,7 @@ min-height: 110vh;
 /* End of Media Query for Tablet */
 
 /* Media Query for Desktop */
-@media only screen and (min-width: 1090px){
+@media only screen and (min-width: 1091px){
 
     /* Header */
     #header .hamburguer{
