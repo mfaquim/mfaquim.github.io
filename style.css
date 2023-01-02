@@ -820,6 +820,7 @@ min-height: 110vh;
     object-fit: contain;
     background: whitesmoke url('/images/hireme.svg');
     background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -1099,6 +1100,12 @@ min-height: 110vh;
     /* End of Project */
 
     /* About */
+    #about {
+    width: 90%;
+    position: relative;
+    left: 20px;
+    }
+
     #about .about{
         flex-direction: row;
     }
@@ -1213,7 +1220,7 @@ min-height: 110vh;
     line-height: 2em;
     transition: .4s ease-in-out;
     border-radius: 3em;
-    margin-right: 2.2em;
+    margin-right: 3em;
 }
 #header > div > div > div.nav-list > nav:hover {
     background-color: #768ba3 !important;
