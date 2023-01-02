@@ -48,3 +48,26 @@ menu_item.forEach((item) => {
 });
 
 
+const languageButton = document.querySelector("#translateEn");
+const languageButton2 = document.querySelector("#translatePt");
+const selectEnglish = document.querySelectorAll('span[lang="en"]');
+const selectPortuguese = document.querySelectorAll('span[lang="pt"]');
+translate(selectPortuguese, selectEnglish);
+languageButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  translate(selectEnglish, selectPortuguese);
+});
+
+languageButton2.addEventListener("click", (event) => {
+  event.preventDefault();
+  translate(selectPortuguese, selectEnglish);
+});
+
+function translate(language, language2) {
+  for (let i = 0; i < language.length; i++) {
+    const element = language[i].classList;
+    element.add("selected");
+    const element2 = language2[i].classList;
+    element2.remove("selected");
+  }
+}
