@@ -1,12 +1,15 @@
 document.addEventListener("scroll", () => {
   let scroll_position = window.scrollY;
-  if (scroll_position > 790) {
-    header.style.backgroundColor = "#3f4a57";
-    header.style.boxShadow =  "-1px 5px 10px #3f4a57";
-    header.style.transition = ".3s ease";
+  if (scroll_position > 800) {
+    document.querySelector("#header > div.header.container > div > div.nav-list > nav").style.backgroundColor = "#768ba3";
+    document.querySelector("#header > div.header.container > div > div.nav-list > nav").style.boxShadow =  "-2px 15px 20px #3f4a57";
+    document.querySelector("#header > div.header.container > div > div.nav-list > nav").style.transition = "transition: .4s ease-in-out;";
+    document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.backgroundColor = "#768ba3";
+    document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.boxShadow =  "-2px 15px 20px #3f4a57";
+    document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.transition = "transition: .4s ease-in-out;";
   } else {
-    header.style.backgroundColor = "transparent";
-    header.style.boxShadow =  "none";
+    document.querySelector("#header > div.header.container > div > div.nav-list > nav").style.backgroundColor = "inherit";
+    document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.backgroundColor = "inherit";
   }
 });
 
@@ -16,7 +19,6 @@ const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
 const menu_item = document.querySelectorAll(
   ".header .nav-bar .nav-list ul li a"
 );
-const header = document.querySelector(".header.container");
 
 
 hamburguer.addEventListener("click", () => {
