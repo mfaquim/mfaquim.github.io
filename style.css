@@ -1130,15 +1130,6 @@ min-height: 120vh;
         min-width: 20vh;
     }
 
-    #header > div.header.container > div > div.nav-list > nav > ul.active {
-        width: 100%;
-        background: #768ba3;
-    }
-
-    #header > div.header.container > div > div.nav-list > nav > ul {
-        overflow: hidden;
-        width: 100%;
-    }
 
 
 
@@ -1166,12 +1157,7 @@ min-height: 120vh;
         width: fit-content;
         background-color: transparent;
     }
-    #header .nav-list ul.active{
-        width: 100%;
-        background: #768ba3;
-        min-height: 100vh;
 
-    }
     #header .nav-list ul li{
         display: inline-block;
     }
