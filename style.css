@@ -742,6 +742,7 @@ min-height: 110vh;
     min-height: 110vh;
     margin: 0 auto;
     padding: 100px 20px;
+    overflow-x: hidden;
 }
 
 #about .col-left {
