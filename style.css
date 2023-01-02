@@ -398,11 +398,7 @@ p {
 /* Services Scetion */
 #services {
 background-color: #f6f8fc;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-object-fit: scale-down;
+min-height: 120vh;
 }
 
 .bm-pl {
@@ -418,7 +414,6 @@ object-fit: scale-down;
 }
 .bm-pl__blob {
 	animation: moveR 8s linear infinite;
-
 	mix-blend-mode: screen;
 	position: absolute;
 	top: 0;
@@ -429,19 +424,19 @@ object-fit: scale-down;
 .bm-pl__blob--r {
 	background: orange;
     opacity: .3;
-    transform: rotate3d(1, 1, 1, 45deg)
+    transform: rotate3d(2, -1, -1, 30deg)
 }
 .bm-pl__blob--g {
 	animation-name: moveG;
 	background: #ff784f;
     opacity: .3;
-    transform: rotate3d(2, -1, -1, -0.2turn);
+    transform: rotate3d(2, -1, -1, 90deg);
 }
 .bm-pl__blob--b {
 	animation-name: moveB;
 	background: orange;
     opacity: .3;
-    transform: rotate3d(0, 1, 0.5, 3.142rad);
+    transform: rotate3d(2, -1, -1, 45deg);
 }
 
 /* Animation */
@@ -741,6 +736,7 @@ object-fit: scale-down;
     flex-direction: column-reverse;
     text-align: center;
     max-width: 1200px;
+    min-height: 120vh;
     margin: 0 auto;
     padding: 100px 20px;
 }
