@@ -784,6 +784,7 @@ min-height: 120vh;
     position: relative;
     border: 10px solid white;
     background: #f44336;
+
 }
 
 #about .col-left .about-img::after {
@@ -793,7 +794,7 @@ min-height: 120vh;
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid rgb(248, 94, 77);
+    border: 16px solid rgb(248, 94, 77);
     z-index: -1;
 }
 
