@@ -11,6 +11,7 @@ document.addEventListener("scroll", () => {
     document.querySelector("#header > div.header.container > div > div.nav-list > nav").style.backgroundColor = "inherit";
     document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.backgroundColor = "inherit";
   }
+
 });
 
     let prevScrollpos = window.pageYOffset;
