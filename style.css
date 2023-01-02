@@ -322,6 +322,7 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     object-fit: scale-down;
+
 }
 
 #hero .hero {
@@ -623,6 +624,7 @@ object-fit: scale-down;
     background-attachment: fixed;
     background-repeat: no-repeat;
     object-fit: contain;
+
 }
 
 #projects .projects {
@@ -732,6 +734,8 @@ object-fit: scale-down;
 /* End of Projcets Section */
 
 /* About Section */
+
+
 #about .about {
     flex-direction: column-reverse;
     text-align: center;
@@ -1214,4 +1218,7 @@ object-fit: scale-down;
 #header > div.header.container > div > div.nav-list > nav:hover{
     background-color: #768ba3;
     transition: .4s ease-in-out;
+}
+#about {
+    min-height: 100vh;
 }
