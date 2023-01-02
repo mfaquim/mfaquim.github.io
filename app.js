@@ -13,7 +13,18 @@ document.addEventListener("scroll", () => {
   }
 });
 
+    let prevScrollpos = window.pageYOffset;
+    window.onscroll = () => {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header").style.top = "0";
+    } else {
+      document.getElementById("header").style.top = "-150px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
+const hireMe = document.getElementById(contact);
 const hamburguer = document.querySelector(".header .nav-bar .nav-list .hamburguer");
 const mobile_menu = document.querySelector(".header .nav-bar .nav-list ul");
 const menu_item = document.querySelectorAll(
@@ -34,4 +45,5 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle("active");
   });
 });
+
 

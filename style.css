@@ -18,18 +18,6 @@ a {
     text-decoration: none;
 
 }
-.section-title {
-    z-index: 10;
-    font-size: 5rem;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-    padding: 20px;
-    
-}
 
 
 img {
@@ -51,6 +39,19 @@ p {
 
 .section-title span {
     color: rgb(248, 94, 77);
+}
+
+.section-title {
+    z-index: 10;
+    font-size: 5rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+    padding: 20px;
+    
 }
 .container {
     min-height: 100vh;
@@ -158,7 +159,9 @@ p {
     }
   }
   
-  
+    #header {
+    transition: .5s ease-in-out;
+  }
   
 #header .header{
     min-height: 8vh;
@@ -649,7 +652,7 @@ object-fit: scale-down;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: ease(60deg, #29323c 0%, #768ba3 100%);
+    background-image: ease(60deg, #29323c 0%, #000000 100%);
     margin-bottom: .5em;
     border-bottom-left-radius: 1.3em;
     border-bottom-right-radius: 1.3em;
@@ -766,7 +769,8 @@ object-fit: scale-down;
     height: 100%;
     width: 100%;
     position: relative;
-    border: 10px solid whitesmoke;
+    border: 10px solid white;
+    background: #f44336;
 }
 
 #about .col-left .about-img::after {
@@ -800,6 +804,9 @@ object-fit: scale-down;
 	font-size:12px;
     
     background: whitesmoke url('/images/hireme.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
 }
  
 @-webkit-keyframes animate {
