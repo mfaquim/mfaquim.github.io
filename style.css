@@ -1183,6 +1183,19 @@ min-height: 110vh;
 }
 /* End Media Query for Desktop */
 
+@media (max-width: 1080px) {
+
+#social-media-left{
+    left: auto;
+    right: 20px;
+}
+#social-media-right, #social-media-right button{
+    left: 20px;
+    right: auto;
+}
+
+}
+
 @media screen and (max-width: 768px) {
     #footer > div > h2, #footer > div > div.brand > h1{
     padding-left: 1.3rem;
