@@ -17,26 +17,15 @@ document.addEventListener("scroll", () => {
 
 });
 
-document.addEventListener("scroll", () => {
-  let scroll_position = window.scrollY;
-  if (scroll_position > 4989) {
-    console.log("Reached end of website");
-    document.getElementById("header").style.top = "0";
-  }
-  else {
-    document.getElementById("header").style.top = "-150px";
-  }
-});
 
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = () => {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+window.onscroll = () => {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
       document.getElementById("header").style.top = "0";
-    } else {
-      document.getElementById("header").style.top = "-150px";
+  } else {
+    document.getElementById("header").style.top = "-150px";
     }
-    prevScrollpos = currentScrollPos;
+  prevScrollpos = currentScrollPos;
 }
 
 const hamburguer = document.querySelector(".header .nav-bar .nav-list .hamburguer");
