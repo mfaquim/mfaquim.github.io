@@ -315,7 +315,7 @@ p {
 #hero {
     background-image: url(./images/image1.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     position: relative;
     z-index: 1;
     opacity: 1;
@@ -503,6 +503,7 @@ min-height: 110vh;
     margin: 0 auto;
     z-index: 200;
     position: relative;
+    font-size: 2em;
 }
 
 #services .service-top p {
@@ -1263,3 +1264,12 @@ min-height: 110vh;
     #header > div > div > div.nav-list > nav {
         border: none;
     }
+
+    #header .nav-list ul.active  {
+        background-color: #768ba3;
+    }
+
+    h1.section-title{
+        font-size: 4em;
+    }
+}
