@@ -1296,10 +1296,10 @@ min-height: 110vh;
 
     #social-media-left{
         left: auto;
-        right: 20px;
+        right: 16px;
     }
     #social-media-right, #social-media-right button{
-        left: 20px;
+        left: 16px;
         right: auto;
     }
     
@@ -1320,23 +1320,23 @@ min-height: 110vh;
         font-size: 4em;
     }
     .service-top .section-title {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     #social-media-right::after{
-        height: 90px;
+        height: 20px;
     }
     
     #social-media-left::after{
-        height: 50px;
+        height: 20px;
     }
 
 
     #translateEn {
-        bottom: 100px
+        bottom: 20px
     }
     #translatePt {
-        bottom: 140px
+        bottom: 65px;
     }
 
     .col-right .cta {
