@@ -1303,4 +1303,7 @@ min-height: 110vh;
     .col-right .cta {
         margin: 0px auto;
     }
+    .contact-items .cta {
+        background-color: #515f6f;
+    }
 }
