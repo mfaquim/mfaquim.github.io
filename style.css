@@ -867,33 +867,6 @@ min-height: 110vh;
     object-fit: cover;
 }
 
- 
-@-webkit-keyframes animate {
-	from {background-position:0 100%;}
-	to {background-position: 500px 100%;}
-    
-}
- 
-@-moz-keyframes animate {
-	from {background-position:0 100%;}
-	to {background-position: 500px 100%;}
-}
- 
-@-ms-keyframes animate {
-	from {background-position:0 100%;}
-	to {background-position: 500px 100%;}
-}
- 
-@-o-keyframes animate {
-	from {background-position:0 100%;}
-	to {background-position: 500px 100%;}
-}
- 
-@keyframes animate {
-	from {background-position:0 100%;}
-	to {background-position: 500px 100%;}
-}
-
 #social-media-left {
     box-sizing: inherit;
     position: fixed;
@@ -1353,12 +1326,16 @@ min-height: 110vh;
         margin: 0px auto;
     }
     .contact-items .cta {
-        background-color: #515f6f;
+        background-color: transparent;
         color: #7dbb52;
     }
 
     .contact-items .cta span {
-        color: whitesmoke;
+        color: #f85e4d;
+    }
+
+    #cv {
+        color: #f85e4d;
     }
 
 }
