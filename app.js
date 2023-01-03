@@ -7,9 +7,11 @@ document.addEventListener("scroll", () => {
     document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.backgroundColor = "#768ba3";
     document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.boxShadow =  "-2px 15px 20px #3f4a57";
     document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.transition = "transition: .4s ease-in-out;";
+    document.querySelector("#header > div.header.container > div > div.nav-list > div").style.backgroundColor = "#768ba3";
   } else {
     document.querySelector("#header > div.header.container > div > div.nav-list > nav").style.backgroundColor = "inherit";
     document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.backgroundColor = "inherit";
+    document.querySelector("#header > div.header.container > div > div.nav-list > div").style.backgroundColor = "inherit";
   }
 
 });

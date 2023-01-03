@@ -269,6 +269,7 @@ p {
     cursor: pointer;
     transform: scale(.8);
     margin-right: 20px;
+    border: 2px solid #f85e4d;
     box-shadow: -2px 15px 20px #768ba3;
     border-radius: 6em;
 }
@@ -1039,7 +1040,7 @@ min-height: 110vh;
     }
     100%{
         opacity: 0;
-        transform: scale(1.2);
+        transform: scale(1.3);
     }
 }
 
