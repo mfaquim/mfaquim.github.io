@@ -1146,6 +1146,11 @@ min-height: 110vh;
         min-width: 20vh;
     }
 
+    .contact-items .cta:hover {
+        background-color: #515f6f;
+        color: #7dbb52;
+    }
+
 
 
 
@@ -1305,5 +1310,11 @@ min-height: 110vh;
     }
     .contact-items .cta {
         background-color: #515f6f;
+        color: #7dbb52;
     }
+
+    .contact-items .cta span {
+        color: whitesmoke;
+    }
+
 }
