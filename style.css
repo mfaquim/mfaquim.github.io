@@ -256,6 +256,7 @@ p {
     transition: .4s ease-in-out;
 }
 
+
 #header .hamburguer{
     height: 80px;
     width: 80px;
@@ -268,7 +269,8 @@ p {
     cursor: pointer;
     transform: scale(.8);
     margin-right: 20px;
-    box-shadow: none;
+    box-shadow: -2px 15px 20px #768ba3;
+    border-radius: 6em;
 }
 #header .hamburguer::after{
     position: absolute;
@@ -280,7 +282,7 @@ p {
     animation: hamburguer_pulse 1.2s ease-in-out infinite;
 }
 #header .hamburguer .bar{
-     height: 2px;
+     height: 3px;
      width: 30px;
      position: relative;
      background-color: whitesmoke;
@@ -309,6 +311,8 @@ p {
 #header .hamburguer.active .bar::after{
     top: 0;
 }
+
+
 /* End Header */
 
 /* Hero Section */
@@ -1030,11 +1034,12 @@ min-height: 110vh;
 @keyframes hamburguer_pulse{
     0%{
         opacity: 1;
+        border-color: #f85e4d;
         transform: scale(1);
     }
     100%{
         opacity: 0;
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
 }
 
@@ -1267,6 +1272,7 @@ min-height: 110vh;
 
     #header .nav-list ul.active  {
         background-color: #768ba3;
+        width: 100vw;
     }
 
     h1.section-title{
