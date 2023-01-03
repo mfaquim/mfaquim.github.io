@@ -272,6 +272,7 @@ p {
     border: 2px solid #f85e4d;
     box-shadow: -2px 15px 20px #768ba3;
     border-radius: 6em;
+    transition: .4s ease-in-out;
 }
 #header .hamburguer::after{
     position: absolute;
@@ -1281,5 +1282,21 @@ min-height: 110vh;
     }
     .service-top .section-title {
         font-size: 2em;
+    }
+
+    #social-media-right::after{
+        height: 90px;
+    }
+    
+    #social-media-left::after{
+        height: 50px;
+    }
+
+
+    #translateEn {
+        bottom: 100px
+    }
+    #translatePt {
+        bottom: 140px
     }
 }
