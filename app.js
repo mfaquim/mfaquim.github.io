@@ -17,6 +17,17 @@ document.addEventListener("scroll", () => {
 
 });
 
+document.addEventListener("scroll", () => {
+  let scroll_position = window.scrollY;
+  if (scroll_position > 4989) {
+    console.log("Reached end of website");
+    document.getElementById("header").style.top = "0";
+  }
+  else {
+    document.getElementById("header").style.top = "-150px";
+  }
+});
+
     let prevScrollpos = window.pageYOffset;
     window.onscroll = () => {
     let currentScrollPos = window.pageYOffset;
@@ -74,4 +85,3 @@ function translate(language, language2) {
   }
 }
 
-jQuery(".scroll-pane").jScrollPane();
