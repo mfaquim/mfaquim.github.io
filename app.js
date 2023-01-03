@@ -73,3 +73,5 @@ function translate(language, language2) {
     element2.remove("selected");
   }
 }
+
+jQuery(".scroll-pane").jScrollPane();

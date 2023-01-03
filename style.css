@@ -36,6 +36,32 @@ p {
 
 }
 
+::-webkit-scrollbar {
+    max-height: 12px;
+    max-width: 12px;
+    background: #515f6f;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f85e4d;
+    max-width: 8px;
+    overflow-x: hidden;
+    -webkit-border-radius: 2em;
+    -webkit-box-shadow: .5px 3px 3px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-button {
+    background: #f85e4d;
+    border-radius: 1em;
+    height:32px;
+}
+
 
 
 .section-title span {
@@ -384,6 +410,8 @@ p {
     animation: text_reveal_box 1s ease;
     animation-delay: 36s;
 }
+
+
 
 #hero h1:nth-child(1) span {
     animation-delay: 1s;
@@ -1257,6 +1285,7 @@ min-height: 110vh;
 #about {
     min-height: 100vh;
 }
+
 
 @media (max-width: 1080px) {
 
