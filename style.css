@@ -1299,4 +1299,8 @@ min-height: 110vh;
     #translatePt {
         bottom: 140px
     }
+
+    .col-right .cta {
+        margin: 0px auto;
+    }
 }
