@@ -14,17 +14,16 @@ document.addEventListener("scroll", () => {
     document.querySelector("#header > div.header.container > div > div.brand > a > h1").style.backgroundColor = "inherit";
     document.querySelector("#header > div.header.container > div > div.nav-list > div").style.backgroundColor = "inherit";
   }
-
 });
 
-
+var prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-      document.getElementById("header").style.top = "0";
+    document.getElementById("header").style.top = "0";
   } else {
     document.getElementById("header").style.top = "-150px";
-    }
+  }
   prevScrollpos = currentScrollPos;
 }
 
