@@ -119,11 +119,11 @@ p {
     color: rgb(248, 94, 77);
     background-color: #515f6f;
     transition: .4s ease-in-out;
-    transform: translate(4px,4px);
+    transform: translate(2px,2px);
 }
 
 .cta:active {
-    transform: translate(8px,8px);
+    transform: translate(4px,4px);
     box-shadow: 0 5px 5px #414c59;
     transition: translate .4s ease-in-out;
 }
