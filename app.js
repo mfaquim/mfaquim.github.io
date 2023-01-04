@@ -16,9 +16,9 @@ document.addEventListener("scroll", () => {
   }
 });
 
-document.querySelectorAll(".nav").forEach((e) => {
-  e.addEventListener('click', function(el) {
-    el.preventDefault();
+document.querySelectorAll(".nav").forEach((el) => {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
     setTimeout(function() {
       window.location = e.target.href;
     }, 450);
