@@ -16,6 +16,15 @@ document.addEventListener("scroll", () => {
   }
 });
 
+document.querySelectorAll(".nav").forEach((e) => {
+  e.addEventListener('click', function(el) {
+    el.preventDefault();
+    setTimeout(function() {
+      window.location = e.target.href;
+    }, 450);
+  });
+});
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
