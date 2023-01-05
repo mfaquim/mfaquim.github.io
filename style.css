@@ -36,6 +36,11 @@ p {
 
 }
 
+.selected {
+    display: none;
+}
+
+
 ::-webkit-scrollbar {
     max-height: 12px;
     max-width: 12px;

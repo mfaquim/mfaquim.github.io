@@ -60,8 +60,8 @@ menu_item.forEach((item) => {
 
 const languageButton = document.querySelector("#translateEn");
 const languageButton2 = document.querySelector("#translatePt");
-const selectEnglish = document.querySelectorAll('span[lang="en"]');
-const selectPortuguese = document.querySelectorAll('span[lang="pt"]');
+const selectEnglish = document.querySelectorAll('en');
+const selectPortuguese = document.querySelectorAll('pt');
 translate(selectPortuguese, selectEnglish);
 languageButton.addEventListener("click", (event) => {
   event.preventDefault();
