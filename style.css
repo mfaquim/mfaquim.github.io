@@ -1111,6 +1111,10 @@ min-height: 110vh;
         color: #f85e4d !important;
     }
 
+    #cv {
+        color: #f85e4d;     
+    }
+
 
 
     .contact h1 span {
@@ -1279,6 +1283,7 @@ min-height: 110vh;
 
     #cv {
         color: #f85e4d;
+        
     }
 
 }
