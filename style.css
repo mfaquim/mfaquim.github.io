@@ -762,16 +762,11 @@ min-height: 110vh;
     font-size: 2.5rem;
 }
 
-
-#about .col-left .about-img {
-    position: relative;
-}
-
 #about .col-left .about-img {
     width: 100%;
     position: relative;
     border: 10px solid white;
-    background: #f44336;
+    background: whitesmoke;
 
 }
 
