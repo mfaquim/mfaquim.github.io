@@ -308,7 +308,6 @@ p {
 #header .nav-list ul li:hover a, #header h1:hover{
     color: rgb(248, 94, 77);
     transition: .4s ease-in-out;
-    background-color: #768ba3;
 }
 
 #header h1 span:hover {
